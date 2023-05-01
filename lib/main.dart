@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const NotesApp());
+  runApp(const NoteApp());
 }
-class NotesApp extends StatelessWidget {
-  const NotesApp({super.key});
+class NoteApp extends StatelessWidget {
+  const NoteApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      theme: ThemeData(brightness:Brightness.dark ),
+      home:const NotesView(),
+    );
+      
   }
 }
