@@ -8,6 +8,16 @@ class Notesview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold();
+    return Scaffold( 
+      body: NotesViewBody(),
+    );
+  }
+}
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
