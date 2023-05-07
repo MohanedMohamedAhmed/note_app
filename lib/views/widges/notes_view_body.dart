@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show BuildContext, Column, SizedBox, StatelessWidget, Widget;
+import 'package:flutter/material.dart' show BuildContext, Column, EdgeInsets, SizedBox, StatelessWidget, Widget;
 
 import 'custom_app_bar.dart';
 class NotesViewBody extends StatelessWidget {
@@ -6,13 +6,16 @@ class NotesViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Padding(
+      Padding:const EdgeInsets.symmetric(horizontal:24),
+     child:Column(
       children:const [
         SizedBox(
           height:50,
         ),
         CustomAppBar(),
       ],
+    ),
     );
   }
 }

@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show BuildContext, Row, Spacer, StatelessWidget, Text, TextStyle, Widget;
+
+import 'custom_icon.dart';
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
 
@@ -10,17 +12,11 @@ class CustomAppBar extends StatelessWidget {
           fontFamily: 28,
         ),
         ),
+        Spacer(),
         
+        CustomSearchIcon(),
 
       ],
     );
-  }
-}
-class CustomSearchIcon extends StatelessWidget {
-  const CustomSearchIcon({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
