@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show BorderRadius, BoxDecoration, BuildContext, Colors, Column, Container, CrossAxisAlignment, EdgeInsets, Icon, Icons, ListTile, Padding, SizedBox, StatelessWidget, Text, TextStyle, Widget;
+import 'package:flutter/material.dart' show BorderRadius, BoxDecoration, BuildContext, Color, Colors, Column, Container, CrossAxisAlignment, EdgeInsets, Icon, Icons, ListTile, Padding, SizedBox, StatelessWidget, Text, TextStyle, Widget;
 
 import 'custom_app_bar.dart';
 class NotesViewBody extends StatelessWidget {
@@ -29,25 +29,27 @@ class NoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color:Colors.yellow,
+        color:const Color(0xffFFCCBD),
         borderRadius:BorderRadius.circular(16),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           ListTile(
-            title: Text('flutter tips' ,
+            title:const Text('flutter tips' ,
             style:
              TextStyle(
               color:colors.black,
+              fontSize: 26,
             ),
             ),
-            subtitle:Text('build your career with mohamed mohamed' ,style:    TextStyle(
-              color:colors.black,
+            subtitle:Text('Build your career with mohamed mohamed' ,style:    TextStyle(
+              color:colors.black ,withOpacity(0.4),
+              fontSize: 20,
             ),
             ),
             ),
-            trailing: IconBotton(onPressed: () {},icon: Icon(Icons.delete,color:colors.black),
+            trailing: IconBotton(onPressed: () {},icon: Icon(Icons.delete,color:colors.black,size:30,),
           ),
           Text('may21 ,2022',
           color:Colors.black,)
