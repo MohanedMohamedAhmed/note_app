@@ -1,8 +1,17 @@
-class NoteModel
+// ignore: depend_on_referenced_packages
+import 'package:hive/hive.dart';
+part 'note_modei.g.dart';
+@HiveType(typId:0)
+
+class NoteModel extends HiveObject
 {
+  @HiveField(0)
   final String title;
+  @HiveField(1)
   final String subtitle;
+  @HiveField(2)
   final String data;
+  @HiveField(3)
   final int color;
 
   NoteModel({
