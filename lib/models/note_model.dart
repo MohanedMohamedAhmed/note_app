@@ -1,10 +1,10 @@
-// ignore: depend_on_referenced_packages
+import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-part 'note_modei.g.dart';
-@HiveType(typId:0)
 
-class NoteModel extends HiveObject
-{
+part 'note_model.g.dart';
+
+@HiveType(typeId: 0)
+class NoteMOdel extends HiveObject {
   @HiveField(0)
   final String title;
   @HiveField(1)
@@ -14,12 +14,9 @@ class NoteModel extends HiveObject
   @HiveField(3)
   final int color;
 
-  NoteModel({
-    required this.title,
-    required this.subtitle,
-    required this.data,
-    required this.color
-    }
-    );
-  
+  NoteMOdel(
+      {required this.title,
+      required this.subtitle,
+      required this.data,
+      required this.color});
 }
